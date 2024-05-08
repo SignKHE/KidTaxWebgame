@@ -24,6 +24,15 @@
         <div id="unity-build-title">전체화면</div>
       </div>
     </div>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCL177TGFJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LCL177TGFJ');
+    </script>
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -57,15 +66,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/TaxWebGame.loader.js";
+      var loaderUrl = buildUrl + "/TaxWebGame.loader.js?ver=1.24050801";
       var config = {
-        dataUrl: buildUrl + "/TaxWebGame.data?ver=1.24050201",
-        frameworkUrl: buildUrl + "/TaxWebGame.framework.js?ver=1.24050201",
-        codeUrl: buildUrl + "/TaxWebGame.wasm",
+        dataUrl: buildUrl + "/TaxWebGame.data?ver=1.24050801",
+        frameworkUrl: buildUrl + "/TaxWebGame.framework.js?ver=1.24050801",
+        codeUrl: buildUrl + "/TaxWebGame.wasm?ver=1.24050801",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "4DArt",
         productName: "TaxWebGame",
-        productVersion: "1.24050201",
+        productVersion: "1.24050801",
         showBanner: unityShowBanner,
       };
 
