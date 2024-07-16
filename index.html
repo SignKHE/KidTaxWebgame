@@ -2,7 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
     <meta http-equiv="Expires" content="-1">
     <title>어린이 국세청 세금게임</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
@@ -20,8 +20,10 @@
       <div id="unity-warning"> </div>
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
+        <!---
         <div style="text-align: center;"><a href="https://forms.gle/tnACYoS15xAbw6nR9 "target="_blank">
           어린이 국세청 세금게임 랭킹 이벤트!!</a></div>
+          -->
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">전체화면</div>
       </div>
@@ -35,6 +37,7 @@
 
       gtag('config', 'G-LCL177TGFJ');
     </script>
+
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -68,15 +71,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/TaxWebGame.loader.js?ver=1.24052101";
+      var loaderUrl = buildUrl + "/TaxWebGame.loader.js?ver=1.24071601";
       var config = {
-        dataUrl: buildUrl + "/TaxWebGame.data?ver=1.24052101",
-        frameworkUrl: buildUrl + "/TaxWebGame.framework.js?ver=1.24052101",
-        codeUrl: buildUrl + "/TaxWebGame.wasm?ver=1.24052101",
+        dataUrl: buildUrl + "/TaxWebGame.data?ver=1.24071601",
+        frameworkUrl: buildUrl + "/TaxWebGame.framework.js?ver=1.24071601",
+        codeUrl: buildUrl + "/TaxWebGame.wasm?ver=1.24071601",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "4DArt",
         productName: "TaxWebGame",
-        productVersion: "1.24052101",
+        productVersion: "1.24071601",
         showBanner: unityShowBanner,
       };
 
@@ -120,7 +123,6 @@
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
             document.documentElement.webkitRequestFullscreen();
-
             unityInstance.SetFullscreen(1);
           };
         }).catch((message) => {
